@@ -1,9 +1,0 @@
-POST http://localhost:3000/send HTTP/1.1
-Content-Type: application/json
-
-{
-    "nombre": "Juan Pérez",
-    "telefono": "+521234567890",
-    "asunto": "Consulta",
-    "descripcion": "Hola, necesito más información sobre el servicio."
-}
