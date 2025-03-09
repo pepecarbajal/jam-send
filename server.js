@@ -7,10 +7,6 @@ const messageRoutes = require('./routes/message');
 const app = express();
 const port = 3000;
 
-app.use(cors({
-    origin: "*",
-  }));
-
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
