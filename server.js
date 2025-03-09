@@ -4,8 +4,14 @@ const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 const messageRoutes = require('./routes/message');
 
+const cors = require('cors');
+
 const app = express();
 const port = 3000;
+
+app.use(cors({
+    origin: "*",
+  }));
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
