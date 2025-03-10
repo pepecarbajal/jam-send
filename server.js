@@ -22,6 +22,9 @@ app.use('/', messageRoutes);
 app.get('/', (req, res) => {
     res.send("JAM Desarrollo de Software")
 });
+app.get('/a', (req, res) => {
+    res.send('a');
+});
 
 app.listen(port, () => {
     console.log(`Servidor corriendo en http://localhost:${port}`);
