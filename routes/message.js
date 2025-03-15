@@ -24,14 +24,12 @@ router.post('/send', async (req, res) => {
         const newMessage = new Message({ nombre, telefono, asunto, descripcion });
         await newMessage.save();
 
-        // Enviar el mensaje con Twilio
         // const message = await client.messages.create({
         //     body: mensaje,
         //     from: twilioPhoneNumber,
         //     to: toPhoneNumber
         // });
 
-        // console.log(`Mensaje enviado: ${message.sid}`);
         res.status(200).send('Mensaje enviado y guardado correctamente');
     } catch (error) {
         console.error(`Error al enviar el mensaje: ${error}`);
