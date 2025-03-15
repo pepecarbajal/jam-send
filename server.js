@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-    origin: "*",
+    origin: "https://www.jamsoftware.dev/",
   }));
 
 app.use(bodyParser.json());
